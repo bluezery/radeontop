@@ -1,0 +1,28 @@
+Source: radeontop
+Priority: optional
+Maintainer: Taehwan Kim <taehwan@nemoux.net>
+Build-Depends: debhelper (>=9), libpciaccess-dev, libdrm-dev, libx11-xcb-dev, libxcb-dri2-0-dev, libncurses5-dev
+Standards-Version: 3.9.8
+Section: libs
+Homepage: http://www.nemoux.net
+#Vcs-Git: git://anonscm.debian.org/collab-maint/radeontop.git
+#Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/radeontop.git
+
+Package: radeontop
+Priority: optional
+Section: utils
+Architecture: any
+Depends: radeontop (= ${binary:Version}),
+    ${shlibs:Depends}, ${misc:Depends}
+Description: radeontop util
+ <insert long description, indented with spaces>
+
+Package: radeontop-dbg
+Priority: extra
+Section: debug
+Architecture: any
+Depends: radeontop (= ${binary:Version}),
+    ${shlibs:Depends}, ${misc:Depends}
+Description: radeontop util debuging symbol
+ <insert long description, indented with spaces>
+
